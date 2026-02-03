@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vertical Slice Architecture Nedir, Kullanım Senaryoları ve Pratik Rehber"
+title: "Vertical Slice Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber"
 categories: [mimari, vertical slice architecture]
 tags: [vertical slice architecture, feature based architecture, cqrs, mediator]
 lang: tr
@@ -408,7 +408,7 @@ public sealed class GetOrderByIdHandler(AppDbContext db)
 ## 7. Karar Matrisi: Ne Zaman Kullanmalı/Kullanmamalı?
 
 | Senaryo | VSA Uygun mu? | Neden? |
-|---------|---------------|--------|
+| --------- | --------------- | -------- |
 | Startup MVP (3-5 tablo, basit CRUD) | ❌ Hayır | Gereksiz karmaşıklık; klasik katmanlı yeterli |
 | Orta ölçek, büyüme beklentisi | ✅ Evet | Modülerlik ve test edilebilirlik erken kazanılır |
 | Yüksek değişim hızı, sık özellik ekleme | ✅ Evet | Değişim izolasyonu kritik |
@@ -696,7 +696,7 @@ public sealed class CancelOrderHandler(IOrderRepository repo, IUnitOfWork uow, I
 
 ---
 
-## 11. Mikroservis Geçişi ve VSA
+## 11. Mikroservis Geçişi ve Vertical Slice Architecture
 
 Vertical Slice Architecture, monolith'ten mikroservise geçişte kritik avantaj sağlar:
 
@@ -772,7 +772,7 @@ public sealed class CachingBehavior<TRequest, TResponse>(IDistributedCache cache
 
 ## 13. Sık Sorulan Sorular (FAQ)
 
-**Vertical Slice ile Layered Architecture arasındaki temel fark nedir?** Layered (yatay): Teknik katmanlara göre organize (Controllers, Services, Repositories). VSA (dikey): Use case/feature'a göre organize; her slice uçtan uca bağımsız.
+**Vertical Slice ile Layered Architecture arasındaki temel fark nedir?** Layered (yatay): Teknik katmanlara göre organize (Controllers, Services, Repositories). Vertical Slice Architecture (dikey): Use case/feature'a göre organize; her slice uçtan uca bağımsız.
 
 **Mediator kullanmak zorunlu mu?** Hayır; ancak Mediator pipeline (validation, logging, transaction) otomasyonu sağlar. Alternatif: Manuel dispatcher veya endpoint içinde doğrudan handler çağırma (daha az esneklik).
 
@@ -828,10 +828,10 @@ Ekip üretkenliğini artırmak, kod kalitesini yükseltmek ve hızlı değişim 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Vertical Slice Architecture nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Her özelliği (feature/use case) bağımsız, dikey bir dilim halinde organize eden, değişim maliyetini azaltan mimari yaklaşımdır."}},
-    {"@type": "Question", "name": "Layered Architecture ile farkı nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Layered yatay katmanlara (Controller, Service, Repository) göre organize olurken, VSA use case/feature bazında dikey organize olur; değişim tek slice'a izole edilir."}},
+    {"@type": "Question", "name": "Layered Architecture ile farkı nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Layered yatay katmanlara (Controller, Service, Repository) göre organize olurken, Vertical Slice Architecture use case/feature bazında dikey organize olur; değişim tek slice'a izole edilir."}},
     {"@type": "Question", "name": "MediatR zorunlu mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, ancak MediatR pipeline (validation, logging, transaction) otomasyonu sağlar. Manuel dispatcher veya doğrudan handler çağrısı da mümkündür."}},
     {"@type": "Question", "name": "Ne zaman kullanmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Orta-büyük ölçekli uygulamalar, sık değişen gereksinimler, ekip büyümesi, mikroservis geçiş planı olan senaryolarda ideal. Basit CRUD için gereksiz karmaşıklık yaratabilir."}},
-    {"@type": "Question", "name": "Domain katmanı nereye gider?", "acceptedAnswer": {"@type": "Answer", "text": "Hibrit yaklaşımda Domain ayrı klasör (paylaşımlı aggregate'ler). Pure VSA'da her slice kendi domain logic'ini içerebilir."}}
+    {"@type": "Question", "name": "Domain katmanı nereye gider?", "acceptedAnswer": {"@type": "Answer", "text": "Hibrit yaklaşımda Domain ayrı klasör (paylaşımlı aggregate'ler). Pure Vertical Slice mimarisinde her slice kendi domain logic'ini içerebilir."}}
   ],
   "inLanguage": "tr-TR"
 }
