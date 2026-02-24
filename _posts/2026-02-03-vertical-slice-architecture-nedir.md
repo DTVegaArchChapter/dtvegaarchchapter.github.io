@@ -7,7 +7,14 @@ lang: tr
 author: QuickOrBeDead
 excerpt: Vertical Slice Architecture nedir, nasıl uygulanır, hangi problemleri çözer? Pratik örnekler, klasör yapısı, karar kriterleri, anti-pattern'ler ve gerçek dünya senaryolarıyla detaylı rehber.
 date: 2026-02-03
-last_modified_at: 2026-02-03 10:00:00 +0300
+last_modified_at: 2026-02-24 21:00:00 +0300
+---
+
+> 📚 **Architecture Patterns Serisi**
+> Bu yazı, farklı mimari yaklaşımları karşılaştırmalı olarak ele aldığımız serinin **1. yazısıdır**.
+> - **Yazı 1: Vertical Slice Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber** _(bu yazı)_
+> - Yazı 2: [Onion Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/onion%20architecture/2026/02/24/onion-architecture-nedir.html)
+
 ---
 
 ## TL;DR
