@@ -238,12 +238,12 @@ public class CancelOrderHandlerTests
 
 Vertical Slice Architecture genellikle **Mediator** patternini uygulayan kütüphaneler ile uygulanır. Mediator, request/response tabanlı bir pipeline sağlar ve cross-cutting concern'leri (validation, logging, caching, transaction) behavior olarak ekler.
 
-### MediatR Request/Response Flow
+### Mediator Request/Response Flow
 
 ```text
 Endpoint
   ↓ (Command/Query gönderir)
-MediatR Pipeline
+Mediator Pipeline
   ↓ (Behavior 1: Validation)
   ↓ (Behavior 2: Logging)
   ↓ (Behavior 3: Transaction)
@@ -449,7 +449,7 @@ Projemizde C# ile Vertical Slice Architecture uygulamasını görebilirsiniz:
 ### Proje Özellikleri
 
 - **.NET 9** ile geliştirilmiş örnek uygulama
-- **MediatR** ile pipeline tabanlı handler yapısı
+- **Mediator** ile pipeline tabanlı handler yapısı
 - **FluentValidation** ile validation behavior
 - **Minimal API** endpoint'leri
 - **Entity Framework Core** ile repository pattern
@@ -822,7 +822,7 @@ Ekip üretkenliğini artırmak, kod kalitesini yükseltmek ve hızlı değişim 
 ## 16. Kaynaklar
 
 - Jimmy Bogard – Vertical Slice Architecture: [jimmybogard.com](https://jimmybogard.com/vertical-slice-architecture/)
-- MediatR GitHub: [github.com/jbogard/MediatR](https://github.com/jbogard/MediatR)
+- Mediator (Source Generator Based): [github.com/martinothamar/Mediator](https://github.com/martinothamar/Mediator)
 - FluentValidation: [fluentvalidation.net](https://fluentvalidation.net/)
 - Örnek Proje: [DTVegaArchChapter/Architecture - VerticalSlice](https://github.com/DTVegaArchChapter/Architecture/tree/main/ArchitecturePatterns/Examples/VerticalSlice)
 
@@ -836,7 +836,7 @@ Ekip üretkenliğini artırmak, kod kalitesini yükseltmek ve hızlı değişim 
   "mainEntity": [
     {"@type": "Question", "name": "Vertical Slice Architecture nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Her özelliği (feature/use case) bağımsız, dikey bir dilim halinde organize eden, değişim maliyetini azaltan mimari yaklaşımdır."}},
     {"@type": "Question", "name": "Layered Architecture ile farkı nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Layered yatay katmanlara (Controller, Service, Repository) göre organize olurken, Vertical Slice Architecture use case/feature bazında dikey organize olur; değişim tek slice'a izole edilir."}},
-    {"@type": "Question", "name": "MediatR zorunlu mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, ancak MediatR pipeline (validation, logging, transaction) otomasyonu sağlar. Manuel dispatcher veya doğrudan handler çağrısı da mümkündür."}},
+    {"@type": "Question", "name": "Mediator zorunlu mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, ancak Mediator pipeline (validation, logging, transaction) otomasyonu sağlar. Manuel dispatcher veya doğrudan handler çağrısı da mümkündür."}},
     {"@type": "Question", "name": "Ne zaman kullanmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Orta-büyük ölçekli uygulamalar, sık değişen gereksinimler, ekip büyümesi, mikroservis geçiş planı olan senaryolarda ideal. Basit CRUD için gereksiz karmaşıklık yaratabilir."}},
     {"@type": "Question", "name": "Domain katmanı nereye gider?", "acceptedAnswer": {"@type": "Answer", "text": "Hibrit yaklaşımda Domain ayrı klasör (paylaşımlı aggregate'ler). Pure Vertical Slice mimarisinde her slice kendi domain logic'ini içerebilir."}}
   ],
