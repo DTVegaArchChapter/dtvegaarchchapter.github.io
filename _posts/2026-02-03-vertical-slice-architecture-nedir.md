@@ -11,7 +11,7 @@ last_modified_at: 2026-02-24 21:00:00 +0300
 ---
 
 > 📚 **Architecture Patterns Serisi**
-> Bu yazı, farklı mimari yaklaşımları karşılaştırmalı olarak ele aldığımız serinin **2. yazısıdır**.
+> Bu yazı, farklı mimari yaklaşımları karşılaştırmalı olarak ele aldığımız serinin **1. yazısıdır**.
 > - **Yazı 1: Vertical Slice Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber** _(bu yazı)_
 > - Yazı 2: [Onion Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/onion%20architecture/2026/02/24/onion-architecture-nedir.html)
 
