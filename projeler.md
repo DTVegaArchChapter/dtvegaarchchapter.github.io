@@ -9,8 +9,11 @@ Aşağıda organizasyon altındaki bazı örnek depolar kategorilere göre liste
 ## Architecture
 
 Kurum içi/dağıtık uygulama tasarım örnekleri, pattern uygulamaları.
+- Architecture Patterns
+  - [Onion Architecture](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/Onion) <span class="tag tag-architecture">architecture</span>
+  - [Vertical Slice Architecture](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/VerticalSlice) <span class="tag tag-architecture">architecture</span>
 - Microservices
-  - [Todo Microservice](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/TodoMicroservice) <span class="tag tag-microservices">microservices</span> <span class="tag tag-go">go</span>
+  - [Todo Microservice](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/TodoMicroservice) <span class="tag tag-microservices">microservices</span> <span class="tag tag-architecture">architecture</span>
   - [Transactional Outbox Pattern](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/OutboxPattern) <span class="tag tag-microservices">microservices</span> <span class="tag tag-architecture">architecture</span>
   - [Microfrontend Sample](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/microfrontend-sample) <span class="tag tag-microservices">microservices</span> <span class="tag tag-architecture">architecture</span>
   - [RabbitMQ Sample](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/RabbitMqSample) <span class="tag tag-microservices">microservices</span> <span class="tag tag-event">event</span>
