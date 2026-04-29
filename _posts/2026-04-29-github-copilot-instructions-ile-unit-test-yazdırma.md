@@ -6,8 +6,8 @@ tags: [copilot, unit-test, dotnet, xunit]
 lang: tr
 author: Burcu-Ozkan
 excerpt: Copilot Instruction kullanarak birim test yazımını hızlandırın, coverage kalitesini artırın ve kurumsal projelerde testlerin tutarlı, tekrar üretilebilir ve doğru mimari prensiplerle oluşturulmasını sağlayan standart talimat
-date: 2026-03-26
-last_modified_at: 2026-03-26 13:00:00 +0300
+date: 2026-04-29
+last_modified_at: 2026-04-29 13:00:00 +0300
 ---
 
 ## TL;DR
@@ -246,5 +246,5 @@ ITimeProvider, IIdFactory gibi abstractionlar kullan ve testlerde mock'la.
 
 ## Kaynaklar
 
-- [Goal Management System — `.github/copilot-instructions.md`](https://github.com/Burcu-Ozkan/Architecture/blob/main/ddd/goal-management-system/.github/copilot-instructions.md)
+- [Goal Management System — `.github/copilot-instructions.md`](https://github.com/DTVegaArchChapter/Architecture/blob/main/ddd/goal-management-system/.github/copilot-instructions.md)
 - [DTVegaArchChapter/Architecture — Goal Management System](https://github.com/DTVegaArchChapter/Architecture/tree/main/ddd/goal-management-system)
