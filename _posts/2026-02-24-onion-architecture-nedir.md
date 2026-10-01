@@ -7,7 +7,7 @@ lang: tr
 author: QuickOrBeDead
 excerpt: Onion Architecture nedir, nasıl uygulanır, hangi problemleri çözer? Katman yapısı, bağımlılık yönü, Repository Pattern, CQRS entegrasyonu, anti-pattern'ler ve gerçek dünya senaryolarıyla detaylı rehber.
 date: 2026-02-24
-last_modified_at: 2026-04-30 15:00:00 +0300
+last_modified_at: 2026-10-01 11:00:00 +0300
 ---
 
 > 📚 **Architecture Patterns Serisi**
@@ -15,6 +15,7 @@ last_modified_at: 2026-04-30 15:00:00 +0300
 > - Yazı 1: [Vertical Slice Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/vertical%20slice%20architecture/2026/02/03/vertical-slice-architecture-nedir.html)
 > - **Yazı 2: Onion Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber** _(bu yazı)_
 > - Yazı 3: [Hexagonal Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/hexagonal%20architecture/2026/04/30/hexagonal-architecture-nedir.html)
+> - Yazı 4: [Clean Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/clean%20architecture/2026/10/01/clean-architecture-nedir.html)
 
 ---
 
