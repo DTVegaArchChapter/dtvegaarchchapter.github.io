@@ -16,7 +16,7 @@ last_modified_at: 2026-10-01 11:00:00 +0300
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Clean Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber",
-    "datePublished": "2026-05-31",
+    "datePublished": "2026-10-01",
     "author": { "@type": "Person", "name": "QuickOrBeDead" }
 }
 </script>
