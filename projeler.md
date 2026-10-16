@@ -12,6 +12,8 @@ Kurum içi/dağıtık uygulama tasarım örnekleri, pattern uygulamaları.
 - Architecture Patterns
   - [Onion Architecture](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/Onion) <span class="tag tag-architecture">architecture</span>
   - [Vertical Slice Architecture](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/VerticalSlice) <span class="tag tag-architecture">architecture</span>
+  - [Hexagonal Architecture](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/Hexagonal) <span class="tag tag-architecture">architecture</span>
+  - [Clean Architecture](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/Clean) <span class="tag tag-architecture">architecture</span>
 - Microservices
   - [Todo Microservice](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/TodoMicroservice) <span class="tag tag-microservices">microservices</span> <span class="tag tag-architecture">architecture</span>
   - [Transactional Outbox Pattern](https://github.com/DTVegaArchChapter/Architecture/tree/main/microservices/OutboxPattern) <span class="tag tag-microservices">microservices</span> <span class="tag tag-architecture">architecture</span>
@@ -43,5 +45,6 @@ Mini oyun prototipleri ve dil pratikleri.
 - [Personnel Mongo Db](https://github.com/DTVegaArchChapter/PersonnelMongoDb) <span class="tag tag-architecture">architecture</span>
 - [Long Running Request Messages](https://github.com/DTVegaArchChapter/LongRunningExternalRequestMessaging) <span class="tag tag-architecture">architecture</span> <span class="tag tag-microservices">microservices</span>
 - [Software Architect Learning Path](https://github.com/DTVegaArchChapter/SoftwareArchitectLearningPath) <span class="tag tag-learning">learning</span>
+- [EF Core ile Çok Dilli Veri Modeli: Per-Entity Translation Table Yaklaşımı](https://github.com/DTVegaArchChapter/dotnet-ef-multilingual-per-entity-translation-table) <span class="tag tag-learning">multilanguage</span>
 
 Daha fazla repo: [Tüm Repositories](https://github.com/orgs/DTVegaArchChapter/repositories)
