@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Window background -->
+  <rect width="760" height="420" fill="#f0f0f0" rx="4"/>
+  <!-- Title bar -->
+  <rect width="760" height="32" fill="#3c3c3c" rx="4"/>
+  <rect y="4" width="760" height="28" fill="#3c3c3c"/>
+  <text x="14" y="21" fill="white" font-size="13">Options</text>
+  <!-- Close / min / max buttons -->
+  <rect x="706" y="6" width="18" height="18" fill="#c0392b" rx="2"/>
+  <text x="711" y="19" fill="white" font-size="13">✕</text>
+  <rect x="680" y="6" width="18" height="18" fill="#555" rx="2"/>
+  <rect x="654" y="6" width="18" height="18" fill="#555" rx="2"/>
+
+  <!-- Left panel -->
+  <rect x="0" y="32" width="200" height="388" fill="#ffffff" stroke="#d0d0d0" stroke-width="1"/>
+  <!-- Tree items -->
+  <text x="12" y="60" fill="#333" font-size="12">▸ Environment</text>
+  <text x="12" y="82" fill="#333" font-size="12">▸ Text Editor</text>
+  <text x="12" y="104" fill="#333" font-size="12">▸ Projects and Solutions</text>
+  <text x="12" y="126" fill="#333" font-size="12">▸ Source Control</text>
+  <text x="12" y="148" fill="#0078d4" font-size="12" font-weight="bold">▾ GitHub</text>
+  <!-- Selected item highlight -->
+  <rect x="0" y="154" width="200" height="22" fill="#cce4f7"/>
+  <text x="28" y="169" fill="#0078d4" font-size="12" font-weight="bold">  Copilot</text>
+  <text x="12" y="192" fill="#333" font-size="12">▸ IntelliCode</text>
+  <text x="12" y="214" fill="#333" font-size="12">▸ NuGet Package Manager</text>
+
+  <!-- Right panel -->
+  <rect x="200" y="32" width="560" height="388" fill="#fafafa"/>
+  <!-- Panel title -->
+  <text x="220" y="62" fill="#1e1e1e" font-size="15" font-weight="bold">Copilot</text>
+  <line x1="220" y1="70" x2="740" y2="70" stroke="#d0d0d0" stroke-width="1"/>
+
+  <!-- Section: Custom Instructions -->
+  <text x="220" y="96" fill="#444" font-size="12" font-weight="bold">Custom Instructions</text>
+
+  <!-- Checkbox 1 - checked -->
+  <rect x="220" y="110" width="14" height="14" fill="white" stroke="#0078d4" stroke-width="2" rx="2"/>
+  <polyline points="222,117 226,121 232,112" stroke="#0078d4" stroke-width="2" fill="none"/>
+  <text x="242" y="122" fill="#1e1e1e" font-size="12">Enable custom instructions</text>
+
+  <!-- Checkbox 2 - checked -->
+  <rect x="220" y="136" width="14" height="14" fill="white" stroke="#0078d4" stroke-width="2" rx="2"/>
+  <polyline points="222,143 226,147 232,138" stroke="#0078d4" stroke-width="2" fill="none"/>
+  <text x="242" y="148" fill="#1e1e1e" font-size="12">Use repository custom instructions</text>
+
+  <!-- Info box -->
+  <rect x="220" y="168" width="500" height="52" fill="#e8f4fd" stroke="#0078d4" stroke-width="1" rx="3"/>
+  <text x="234" y="186" fill="#0078d4" font-size="12">ℹ</text>
+  <text x="252" y="186" fill="#1e1e1e" font-size="11">Custom instructions allow you to personalize Copilot's behavior</text>
+  <text x="252" y="202" fill="#1e1e1e" font-size="11">by providing context via a .github/copilot-instructions.md file.</text>
+
+  <!-- Section: Completions -->
+  <text x="220" y="248" fill="#444" font-size="12" font-weight="bold">Completions</text>
+
+  <rect x="220" y="260" width="14" height="14" fill="white" stroke="#888" stroke-width="1" rx="2"/>
+  <text x="242" y="272" fill="#1e1e1e" font-size="12">Enable automatic completions</text>
+
+  <rect x="220" y="284" width="14" height="14" fill="white" stroke="#0078d4" stroke-width="2" rx="2"/>
+  <polyline points="222,291 226,295 232,286" stroke="#0078d4" stroke-width="2" fill="none"/>
+  <text x="242" y="296" fill="#1e1e1e" font-size="12">Show completions in all file types</text>
+
+  <!-- Bottom buttons -->
+  <rect x="560" y="370" width="80" height="28" fill="#0078d4" rx="3"/>
+  <text x="585" y="389" fill="white" font-size="12">OK</text>
+  <rect x="648" y="370" width="80" height="28" fill="#f0f0f0" stroke="#aaa" stroke-width="1" rx="3"/>
+  <text x="666" y="389" fill="#333" font-size="12">Cancel</text>
+</svg>
