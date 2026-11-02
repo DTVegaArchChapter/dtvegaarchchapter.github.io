@@ -8,7 +8,7 @@ links:
   - title: GitHub
     url: https://github.com/tahapek5454
   - title: Website
-    url: https://taha-pek.netlify.app/
+    url: https://tahapek.com
   - title: LinkedIn
     url: https://www.linkedin.com/in/taha-pek-413b1b221/
 ---
