@@ -17,6 +17,8 @@ google_analytics: "G-V66WD07ZKX"
 markdown: kramdown
 kramdown:
   input: GFM
+exclude:
+  - README.md
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
