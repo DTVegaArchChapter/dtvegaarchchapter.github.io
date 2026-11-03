@@ -1,0 +1,23 @@
+name: Check post slugs
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  ascii-slugs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure post filenames are ASCII
+        run: |
+          bad=$(git -c core.quotePath=false ls-files _posts | LC_ALL=C grep -P '[^\x00-\x7F]' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Non-ASCII characters found in post filename(s). Use ASCII transliteration (ş→s, ı→i, ğ→g, ü→u, ö→o, ç→c)."
+            echo "$bad"
+            exit 1
+          fi

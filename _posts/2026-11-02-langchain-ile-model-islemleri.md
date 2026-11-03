@@ -8,6 +8,8 @@ author: TahaPek
 excerpt: Langchain ile bir model nesnesi nasıl oluştururuz? Model nesnesinin parametreleri ne işe yarar? Hangi yöntemleri kullanmalıyız? Sorularına cevap arıyoruz. 
 date: 2026-11-02
 last_modified_at: 2026-11-02 20:52:00 +0300
+redirect_from:
+  - /ai/2026/11/02/langchain-ile-model-i%C5%9Flemleri.html
 ---
 
 <!-- markdownlint-disable MD033 -->
