@@ -8,6 +8,8 @@ author: Burcu-Ozkan
 excerpt: Copilot Instruction kullanarak birim test yazımını hızlandırın, coverage kalitesini artırın ve kurumsal projelerde testlerin tutarlı, tekrar üretilebilir ve doğru mimari prensiplerle oluşturulmasını sağlayan standart talimat
 date: 2026-04-29
 last_modified_at: 2026-04-29 13:00:00 +0300
+redirect_from:
+  - /software-engineering/testing/2026/04/29/github-copilot-instructions-ile-unit-test-yazd%C4%B1rma.html
 ---
 
 ## TL;DR
