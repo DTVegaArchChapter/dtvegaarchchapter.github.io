@@ -1,0 +1,51 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - run: bundle exec jekyll build --destination _site
+      - name: Ensure generated post paths are ASCII
+        run: |
+          # Redirect pages intentionally keep the old (possibly non-ASCII) paths.
+          # Only canonical pages, which are not redirect stubs, must be ASCII.
+          bad=$(find _site -type f -name '*.html' -exec grep -L '<meta http-equiv="refresh"' {} + \
+            | LC_ALL=C grep -P '[^\x00-\x7F]' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Non-ASCII HTML output paths found."
+            echo "$bad"
+            exit 1
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

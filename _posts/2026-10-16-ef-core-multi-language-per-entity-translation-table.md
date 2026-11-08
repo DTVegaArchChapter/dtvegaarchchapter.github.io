@@ -8,6 +8,8 @@ author: QuickOrBeDead
 excerpt: Çok dilli (multi-language) veriyi veritabanında nasıl saklarız? Kolon-per-dil, JSON kolon ve translation table yaklaşımlarının karşılaştırması, EF Core ile per-entity translation table tasarımı, Dapper ile dil bazlı okuma ve fallback stratejileri (fallback dil, "Translation Not Available" mesajı, hibrit) örnek projeyle anlatılıyor.
 date: 2026-10-16
 last_modified_at: 2026-10-16 08:00:00 +0300
+redirect_from:
+  - /veritaban%C4%B1/ef%20core/2026/10/16/ef-core-multi-language-per-entity-translation-table.html
 ---
 
 <!-- markdownlint-disable MD033 -->
