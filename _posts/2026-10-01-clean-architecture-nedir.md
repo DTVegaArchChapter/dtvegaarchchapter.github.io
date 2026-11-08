@@ -8,6 +8,8 @@ author: QuickOrBeDead
 excerpt: Clean Architecture nedir, nasıl uygulanır, hangi problemleri çözer? Katman yapısı, Dependency Rule, CQRS ve Mediator ile Use Case'ler, Repository, Read Service, Result pattern, mimari testler ve gerçek dünya örneğiyle detaylı rehber.
 date: 2026-10-01
 last_modified_at: 2026-10-01 11:00:00 +0300
+redirect_from:
+  - /mimari/clean%20architecture/2026/10/01/clean-architecture-nedir.html
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -24,9 +26,9 @@ last_modified_at: 2026-10-01 11:00:00 +0300
 
 > 📚 **Architecture Patterns Serisi**
 > Bu yazı, farklı mimari yaklaşımları karşılaştırmalı olarak ele aldığımız serinin **4. yazısıdır**.
-> - Yazı 1: [Vertical Slice Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/vertical%20slice%20architecture/2026/02/03/vertical-slice-architecture-nedir.html)
-> - Yazı 2: [Onion Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/onion%20architecture/2026/02/24/onion-architecture-nedir.html)
-> - Yazı 3: [Hexagonal Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/hexagonal%20architecture/2026/04/30/hexagonal-architecture-nedir.html)
+> - Yazı 1: [Vertical Slice Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/vertical-slice-architecture/2026/02/03/vertical-slice-architecture-nedir.html)
+> - Yazı 2: [Onion Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/onion-architecture/2026/02/24/onion-architecture-nedir.html)
+> - Yazı 3: [Hexagonal Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber](/mimari/hexagonal-architecture/2026/04/30/hexagonal-architecture-nedir.html)
 > - **Yazı 4: Clean Architecture Nedir? Kullanım Senaryoları ve Pratik Rehber** _(bu yazı)_
 
 ---
@@ -1648,8 +1650,8 @@ C: Domain event'ler Entities katmanına eklenir; Use Case execute edildikten son
 - [Uncle Bob — The Clean Architecture (Blog, 2012)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Clean Architecture: A Craftsman's Guide to Software Structure and Design — Robert C. Martin](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
 - [DTVegaArchChapter/ArchitecturePatterns — Clean Architecture Örnek Proje](https://github.com/DTVegaArchChapter/ArchitecturePatterns/tree/main/Examples/Clean)
-- [Onion Architecture Nedir? — Bu Serinin 2. Yazısı](/mimari/onion%20architecture/2026/02/24/onion-architecture-nedir.html)
-- [Hexagonal Architecture Nedir? — Bu Serinin 3. Yazısı](/mimari/hexagonal%20architecture/2026/04/30/hexagonal-architecture-nedir.html)
+- [Onion Architecture Nedir? — Bu Serinin 2. Yazısı](/mimari/onion-architecture/2026/02/24/onion-architecture-nedir.html)
+- [Hexagonal Architecture Nedir? — Bu Serinin 3. Yazısı](/mimari/hexagonal-architecture/2026/04/30/hexagonal-architecture-nedir.html)
 
 ---
 
